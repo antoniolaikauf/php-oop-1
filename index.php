@@ -66,3 +66,6 @@ $filmsbonus = new moviebonus('pirati dei caraibi', '02-01-2020', 'romantico', 'd
 
 var_dump($filmsbonus);
 echo "<br> ----------- <br>";
+// foreach ($filmsbonus->genere as $tipo) {
+//     var_dump($tipo);
+// }

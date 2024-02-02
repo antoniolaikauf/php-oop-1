@@ -41,3 +41,28 @@ echo "<br> ----------- <br>";
 // cambiato parametro con un metodo
 $films->changegenere('drammatico');
 var_dump($films->getgenere());
+echo "<br>";
+echo "<br>";
+
+// BONUS
+echo 'bonus';
+echo "<br> ----------- <br>";
+
+class moviebonus
+{
+    public $nome;
+    public $data_uscita;
+    public $genere;
+    // construct
+    function __construct($nome, $data_uscita, ...$generi)
+    {
+        $this->nome = $nome;
+        $this->data_uscita = $data_uscita;
+        $this->genere = $generi;
+    }
+}
+
+$filmsbonus = new moviebonus('pirati dei caraibi', '02-01-2020', 'romantico', 'drammatico');
+
+var_dump($filmsbonus);
+echo "<br> ----------- <br>";
